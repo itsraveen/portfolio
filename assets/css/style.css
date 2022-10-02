@@ -782,9 +782,10 @@ section {
 
 .language__list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   flex-wrap: wrap;
+  text-align: left;
 }
 
 .language__name {
@@ -1396,7 +1397,7 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
+/* #footer {
   padding: 15px;
   color: #f4f6fd;
   font-size: 14px;
@@ -1415,7 +1416,53 @@ section {
   text-align: center;
   font-size: 13px;
   color: #eaebf0;
+} */
+
+.footer {
+  background-color: #149ddd;
+  color: #fff;
+  text-align: center;
 }
+
+.footer__container {
+  padding: 3rem 0;
+}
+
+.footer__title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.footer__description {
+  margin-bottom: 1.5rem;
+}
+
+.footer__social {
+  margin-bottom: 3rem;
+}
+
+.footer__link {
+  font-size: 1.4rem;
+  color: var(--first-color-lighten);
+  margin: 0 0.5rem;
+  transition: .3s;
+}
+
+.footer__link:hover {
+  color: #125696;
+}
+
+.footer__copy {
+  font-size: 0.75rem;
+  color: #125696;
+}
+
+
+
+
+
+
 @media (max-width: 1199px) {
   #footer {
     position: static;
